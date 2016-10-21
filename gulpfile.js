@@ -17,18 +17,18 @@ gulp.task('script', function() {
 });
 
 gulp.task('less', function() {
-  return gulp.src('asset/less/*.less')
+  return gulp.src('assets/less/*.less')
       .pipe(less())
-      .pipe(gulp.dest('asset/styles')) // create a css file
+      .pipe(gulp.dest('assets/styles')) // create a css file
       .pipe(cssmin())
       .pipe(rename({ // add .min of the minified
         suffix: '.min'
       }))
-      .pipe(gulp.dest('asset/styles')); // destination
+      .pipe(gulp.dest('assets/styles')); // destination
 });
 
 gulp.task('watch', function () { // auto gulp
-    gulp.watch('asset/less/*.less', ['less']);
+    gulp.watch('assets/less/*.less', ['less']);
   //gulp.watch('asset/scripts/*.js', ['scripts']);   
 });
 
