@@ -1,0 +1,19 @@
+{
+  "name": "codedrew.info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeandrew/codedrew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeandrew/codedrew/issues"
+  },
+  "homepage": "https://github.com/codeandrew/codedrew#readme"
+}

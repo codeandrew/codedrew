@@ -1,5 +1,6 @@
 body {
 	font-family: "Lucida Console", monospace !important;
+	overflow-x: hidden;
 }
 
 
@@ -70,19 +71,21 @@ body {
 .home {
 	margin-top: 100px; 
 	.center;
-	font-size: 3rem;
+	font-size: 2em;
 	color: black;
+
 	h1{
 		.center;
 		padding-top: 140px;
-		font-size: 90px;
+		font-size: 2.9em;
 		margin-bottom: 90px;
 		white-space: nowrap;
 	    overflow: hidden;
 	    width: 760px;
-		animation: type 0.4s steps(60, end);
+		animation: type 0.6s steps(60, end);
 		
 	}
+
 	p{
 		.center;
 	line-height: 60px;
@@ -101,7 +104,37 @@ body {
     	}
 
 	}
+
+	a {
+				color: #2d2d2d !important;
+				&:hover{
+					color: @light-green !important;
+					transition:1s;
+				}
+			}
+	
 }
+
+.page-menu {
+		.center;
+		li{
+			list-style: none;
+			display: inline-block;
+					a {
+				color: #2d2d2d !important;
+				&:hover{
+					color: @light-green !important;
+					transition:1s;
+				}
+			}
+		}
+	
+}
+
+
+
+
+
 
 
 @keyframes type{ 
