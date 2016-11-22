@@ -71,13 +71,13 @@ body {
 .home {
 	margin-top: 100px; 
 	.center;
-	font-size: 2em;
+	
 	color: black;
 
 	h1{
 		.center;
 		padding-top: 140px;
-		font-size: 2.9em;
+		font-size: 5.5em;
 		margin-bottom: 90px;
 		white-space: nowrap;
 	    overflow: hidden;
@@ -89,6 +89,7 @@ body {
 	p{
 		.center;
 	line-height: 60px;
+	font-size: 2em;
 	white-space: nowrap;
     overflow: hidden;
     width: 600px;
@@ -149,10 +150,84 @@ body {
   50%{width: 0;}
   100%{ width: 100;}
 } 
-
+#page-one {
+	height: 100%;
+}
 
 #page-two {
 
 }
 
 
+/* responsive codes */
+
+@media only screen and (max-width: 800px) {
+    #page-one {
+        background-color: lightblue;
+    }
+
+    .home {
+    	h1 {
+    		width: 600px;
+    		font-size: 3.2em;
+    	}
+
+    	p{
+    		font-size: 1.5em;
+    	}
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.home {
+    	h1 {
+    		width: 400px;
+    		font-size: 3em;
+    		margin-bottom: 30px;
+    	}
+
+    	p{
+    		font-size: 1em;
+    		width: 400px;
+    	}
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.home {
+    	h1 {
+    		width: 350px;
+    		font-size: 2.5em;
+    		margin-bottom: 25px;
+    	}
+
+    	p{
+    		font-size: 1em;
+    		width: 350px;
+    		line-height: 45px;
+    	}
+    }
+
+}
