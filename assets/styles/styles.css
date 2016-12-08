@@ -103,6 +103,53 @@ body {
   color: #80b953 !important;
   transition: 1s;
 }
+.secondary-page {
+  margin-top: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  color: black;
+  padding-top: 140px;
+}
+.secondary-page h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 140px;
+  font-size: 2.9em;
+  margin-bottom: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 760px;
+  animation: type 0.6s steps(60, end);
+}
+.secondary-page p {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 600px;
+  animation: type 0.8s steps(60, end);
+}
+.secondary-page p:nth-child(2) {
+  animation: type2 1s steps(60, end);
+}
+.secondary-page p:nth-child(3) {
+  animation: type2 2s steps(60, end);
+}
+.secondary-page p:nth-child(4) {
+  animation: type2 3s steps(60, end);
+}
+.secondary-page a {
+  color: #2d2d2d !important;
+}
+.secondary-page a:hover {
+  color: #80b953 !important;
+  transition: 1s;
+}
+.secondary-page p {
+  width: 750px;
+}
 .page-menu {
   text-align: center;
   margin: 0 auto;
@@ -145,4 +192,31 @@ body {
   100% {
     width: 100;
   }
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#one {
+  position: relative;
+  margin: 0px;
+  height: 100%;
+}
+#one .script {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#one .script h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  animation: type 0.8s steps(60, end);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 5em;
 }
