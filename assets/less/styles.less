@@ -23,6 +23,7 @@ body {
 
 
 .block {display: block;}
+
 .img-r {
 	width: 100%;
 	height: auto;
@@ -71,13 +72,13 @@ body {
 .home {
 	margin-top: 100px; 
 	.center;
-	font-size: 2em;
+	
 	color: black;
 
 	h1{
 		.center;
 		padding-top: 140px;
-		font-size: 2.9em;
+		font-size: 5.5em;
 		margin-bottom: 90px;
 		white-space: nowrap;
 	    overflow: hidden;
@@ -89,6 +90,7 @@ body {
 	p{
 		.center;
 	line-height: 60px;
+	font-size: 2em;
 	white-space: nowrap;
     overflow: hidden;
     width: 600px;
@@ -140,6 +142,12 @@ body {
 	
 }
 
+a {
+	i{
+		font-size: 1.5em !important;
+	}
+}
+
 
 
 
@@ -160,40 +168,80 @@ body {
 } 
 
 
-#page-two {
-
-}
-
-
 
 
 canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
+
+
+	#one {
+		position:relative;
+		margin:0px;
+		height:100%;
+
+		.script {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			.center;
+				h1 
+				{color:white;
+				text-align:center;
+				width:100%;
+				position:relative;			
+				animation: type .8s steps(60, end);
+				white-space: nowrap;
+				overflow: hidden;
+				font-size:5em;
+				}
+			}
+	}
 }
 
 
 
-#one {
-	position:relative;
-	margin:0px;
-	height:100%;
 
-	.script {
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		.center;
-			h1 
-			{color:white;
-			text-align:center;
-			width:100%;
-			position:relative;			
-			animation: type .8s steps(60, end);
-			white-space: nowrap;
-			overflow: hidden;
-			font-size:5em;
-			}
-		}
+
+
+
+
+/* responsive codes */
+
+@media only screen and (max-width: 800px) {
+    
+    .home {
+    	h1 {
+    		width: 600px;
+    		font-size: 3.2em;
+    	}
+
+    	p{
+    		font-size: 1.5em;
+    	}
+    }
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+	.home {
+    	h1 {
+    		width: 400px;
+    		font-size: 3em;
+    		margin-bottom: 30px;
+    	}
+
+    	p{
+    		font-size: 1em;
+    		width: 400px;
+    	}
+    }
 }
